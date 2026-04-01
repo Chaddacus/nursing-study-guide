@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SC Nursing CE Renewal Bundle — Study Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "secondary-container": "#90f3cc",
+        "on-secondary-container": "#007054",
+        "on-surface-variant": "#41484c",
+        "on-surface": "#171c1f",
+        "surface-container-highest": "#dfe3e7",
+        "surface-container-high": "#e4e9ed",
+        "surface-container": "#eaeef2",
+        "surface-container-low": "#f0f4f8",
+        "surface-container-lowest": "#ffffff",
+        "surface": "#f6fafe",
+        "background": "#f6fafe",
+        "primary": "#003343",
+        "primary-container": "#1a4a5c",
+        "on-primary-container": "#8cb9ce",
+        "primary-fixed-dim": "#a0cde3",
+        "secondary": "#006c50",
+        "secondary-fixed-dim": "#77d9b3",
+        "tertiary": "#5a150d",
+        "tertiary-container": "#782b20",
+        "on-tertiary-container": "#ff9584",
+        "outline": "#71787c",
+        "outline-variant": "#c1c7cc",
+        "inverse-surface": "#2c3134",
+        "inverse-on-surface": "#edf1f5",
+        "error": "#ba1a1a",
+        "on-primary": "#ffffff",
+        "on-secondary": "#ffffff",
+      },
+      fontFamily: {
+        "headline": ["Manrope"],
+        "body": ["Inter"],
+        "label": ["Inter"]
+      },
+      borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+    },
+  },
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.lesson-body { display: none; }
+.lesson-body.open { display: block; }
+details summary { cursor: pointer; list-style: none; }
+details summary::-webkit-details-marker { display: none; }
+.tag { display: inline-block; background: #90f3cc; color: #007054; padding: 2px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; margin: 2px; }
+.tag-red { background: #ffdad4; color: #7b2d22; }
+.tag-blue { background: #bce9ff; color: #001f2a; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #e4e9ed; color: #003343; font-weight: 700; padding: 10px 14px; text-align: left; }
+td { padding: 9px 14px; border-bottom: 1px solid #eaeef2; }
+tr:nth-child(even) td { background: #f0f4f8; }
+tr:nth-child(odd) td { background: #ffffff; }
+.callout { border-left: 4px solid #006c50; background: #f0f4f8; padding: 12px 16px; border-radius: 8px; margin: 10px 0; }
+.callout-red { border-left-color: #ba1a1a; background: #fff5f5; }
+.callout-amber { border-left-color: #d97706; background: #fffbeb; }
+@media print {
+  aside, header nav, .no-print { display: none !important; }
+  main { padding: 0 !important; }
+  .lesson-body { display: block !important; }
+}
+</style>
+</head>
+<body class="bg-background text-on-surface font-body">
+
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm flex justify-between items-center px-6 h-16">
+  <div class="flex items-center gap-8">
+    <span class="text-xl font-extrabold text-teal-800 font-headline tracking-tight">🩺 SC Nursing CE</span>
+    <nav class="hidden md:flex gap-1">
+      <a class="text-slate-600 hover:text-teal-700 px-3 py-1.5 rounded font-headline font-semibold text-sm transition-colors" href="#top">Top</a>
+      <a class="text-slate-600 hover:text-teal-700 px-3 py-1.5 rounded font-headline font-semibold text-sm transition-colors" href="#l7">EKG</a>
+      <a class="text-slate-600 hover:text-teal-700 px-3 py-1.5 rounded font-headline font-semibold text-sm transition-colors" href="#l13">Wounds</a>
+      <a class="text-slate-600 hover:text-teal-700 px-3 py-1.5 rounded font-headline font-semibold text-sm transition-colors" href="#l18">Hospice</a>
+    </nav>
+  </div>
+  <div class="flex items-center gap-3">
+    <input id="searchInput" oninput="filterLessons()" class="bg-surface-container-highest border-none rounded-full py-2 pl-4 pr-4 text-sm w-52 focus:ring-2 focus:ring-secondary/50 outline-none hidden sm:block" placeholder="Search lessons..." type="text"/>
+    <button onclick="window.print()" class="text-teal-900 px-3 py-1.5 rounded-lg border border-teal-200 hover:bg-teal-50 text-sm font-semibold transition-colors no-print">Print</button>
+    <button onclick="expandAll()" class="text-teal-900 px-3 py-1.5 rounded-lg border border-teal-200 hover:bg-teal-50 text-sm font-semibold transition-colors no-print">Expand All</button>
+  </div>
+</header>
+
+<div class="flex pt-16 min-h-screen" id="top">
+<!-- Sidebar -->
+<aside class="sticky top-16 h-[calc(100vh-4rem)] w-60 bg-slate-50 hidden lg:flex flex-col p-4 overflow-y-auto no-scrollbar border-r border-slate-100">
+  <div class="mb-4 px-2">
+    <h2 class="font-headline font-bold text-teal-900 text-base">Study Guide</h2>
+    <p class="text-slate-500 text-xs font-medium">SC Renewal Bundle · 20 Lessons</p>
+  </div>
+  <div class="space-y-0.5 text-xs">
+    <a href="#l1" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">1</span> Medical Errors</a>
+    <a href="#l2" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">2</span> Patient Education</a>
+    <a href="#l3" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">3</span> Nurse Burnout</a>
+    <a href="#l4" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">4</span> Bullying</a>
+    <a href="#l5" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">5</span> Quality Improvement</a>
+    <a href="#l6" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">6</span> Workplace Violence</a>
+    <a href="#l7" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">7</span> Telemetry &amp; EKG</a>
+    <a href="#l8" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">8</span> Heart Failure</a>
+    <a href="#l9" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">9</span> Hypertension</a>
+    <a href="#l10" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">10</span> GI Bleed</a>
+    <a href="#l11" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">11</span> Constipation</a>
+    <a href="#l12" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">12</span> Spinal Cord Injury</a>
+    <a href="#l13" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">13</span> Pressure Injuries</a>
+    <a href="#l14" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">14</span> Wound VAC / NPWT</a>
+    <a href="#l15" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">15</span> Wound Nutrition</a>
+    <a href="#l16" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">16</span> Ostomy Management</a>
+    <a href="#l17" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">17</span> Diabetes</a>
+    <a href="#l18" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">18</span> Hospice &amp; Palliative</a>
+    <a href="#l19" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">19</span> End-of-Life Talks</a>
+    <a href="#l20" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-teal-50 hover:text-teal-700 text-slate-600 transition-colors"><span class="w-5 text-center font-bold text-teal-600">20</span> Pneumonia</a>
+  </div>
+</aside>
+
+<!-- Main -->
+<main class="flex-1 p-6 md:p-10 max-w-5xl mx-auto space-y-6">
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden rounded-3xl bg-primary text-white p-8 md:p-10">
+    <div class="relative z-10 space-y-3 max-w-2xl">
+      <div class="flex items-center gap-3">
+        <span class="text-3xl">🩺</span>
+        <span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-black uppercase tracking-widest">Complete · 20 Lessons</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold font-headline leading-tight">South Carolina Nursing CE<br/>Renewal Bundle — Study Guide</h1>
+      <p class="text-primary-fixed-dim text-sm font-medium">Click any lesson header to expand. Use Search or Print above.</p>
+    </div>
+  </section>
+
+  <!-- Progress bar -->
+  <div class="bg-white p-6 rounded-2xl shadow-sm border-l-8 border-secondary flex items-center gap-8">
+    <div class="flex-1">
+      <div class="flex justify-between mb-2">
+        <span class="font-headline font-bold text-primary text-lg">Mastery Progress</span>
+        <span class="font-bold text-secondary">20 / 20 lessons</span>
+      </div>
+      <div class="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden">
+        <div class="h-full w-full bg-gradient-to-r from-secondary to-secondary-fixed-dim"></div>
+      </div>
+    </div>
+    <div class="text-center px-4 border-l border-outline-variant">
+      <span class="block text-2xl font-black text-primary">100%</span>
+      <span class="text-[10px] font-bold text-outline uppercase tracking-wider">Complete</span>
+    </div>
+  </div>
+
+  <!-- LESSONS -->
+
+  <!-- L1 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-primary overflow-hidden" id="l1" data-title="preventing medical errors medication cpoe barcode handoff sbar reconciliation">
+    <button onclick="toggle('l1')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Patient Safety</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">1. Preventing Medical Errors</h2>
+        <p class="text-on-surface-variant text-sm mt-1">~250,000 deaths/year · $19.5B annual cost · IOM 6 Domains</p>
+      </div>
+      <span class="material-symbols-outlined text-primary text-2xl transition-transform" id="l1-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l1-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">CPOE</span><span class="tag">Barcode Scanning</span><span class="tag">Teach-Back</span><span class="tag">SBAR</span><span class="tag">Surgical Time-Out</span><span class="tag">Medication Reconciliation</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Types of Errors</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>Medication errors</strong> — most common; wrong drug/dose/route/patient</li>
+            <li><strong>Surgical errors</strong> — wrong site, procedure, or patient</li>
+            <li><strong>Diagnostic errors</strong> — misdiagnosis, delayed diagnosis</li>
+            <li><strong>Communication errors</strong> — during handoffs, between providers</li>
+            <li><strong>Infection control failures</strong> — HAIs, improper technique</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Prevention Strategies</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>CPOE</strong> — reduces handwriting errors</li>
+            <li><strong>Barcode scanning</strong> — right patient, right med</li>
+            <li><strong>Surgical time-out</strong> — before every procedure</li>
+            <li><strong>Medication reconciliation</strong> — at care transitions</li>
+            <li><strong>Teach-back</strong> — confirm patient understanding</li>
+            <li><strong>SBAR</strong> — structured handoffs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout"><strong>IOM 6 Domains of Quality:</strong> Safe · Effective · Patient-Centered · Timely · Efficient · Equitable</div>
+    </div>
+  </article>
+
+  <!-- L2 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-secondary overflow-hidden" id="l2" data-title="patient education health literacy teach-back vark learning styles">
+    <button onclick="toggle('l2')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Education</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">2. Patient Education Strategies</h2>
+        <p class="text-on-surface-variant text-sm mt-1">Health literacy · VARK model · Teach-back · 90M Americans with low health literacy</p>
+      </div>
+      <span class="material-symbols-outlined text-secondary text-2xl" id="l2-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l2-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">Teach-Back</span><span class="tag">VARK</span><span class="tag">Health Literacy</span><span class="tag">Return Demonstration</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">VARK Learning Styles</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>Visual</strong> — diagrams, charts</li>
+            <li><strong>Auditory</strong> — verbal explanations, podcasts</li>
+            <li><strong>Reading/Writing</strong> — pamphlets, written instructions</li>
+            <li><strong>Kinesthetic</strong> — hands-on demonstrations</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Factors Affecting Learning</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Age, cognitive function, emotional state, pain</li>
+            <li>Cultural background, language barriers, literacy</li>
+            <li>Timing — teach when patient is alert and ready</li>
+          </ul>
+          <h4 class="font-bold text-primary mt-3 mb-2">Evaluating Effectiveness</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Return demonstration</li>
+            <li>Verbalize understanding</li>
+            <li>Behavioral changes at next visit</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout"><strong>Teach-back:</strong> "Just to make sure I explained it clearly, can you tell me what you'll do when you get home?" — ask patients to repeat in their own words.</div>
+    </div>
+  </article>
+
+  <!-- L3 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-tertiary-container overflow-hidden" id="l3" data-title="nurse burnout compassion fatigue moral distress turnover staffing">
+    <button onclick="toggle('l3')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Wellbeing</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">3. Nurse Burnout</h2>
+        <p class="text-on-surface-variant text-sm mt-1">Burnout vs. compassion fatigue · Risk factors · Individual &amp; org interventions</p>
+      </div>
+      <span class="material-symbols-outlined text-tertiary text-2xl" id="l3-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l3-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">Burnout</span><span class="tag">Compassion Fatigue</span><span class="tag">Moral Distress</span><span class="tag">Psychological Safety</span>
+      </div>
+      <table>
+        <thead><tr><th>Concept</th><th>Definition</th><th>Onset</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Burnout</strong></td><td>Chronic workplace stress; emotional exhaustion, depersonalization, reduced accomplishment</td><td>Gradual</td></tr>
+          <tr><td><strong>Compassion Fatigue</strong></td><td>Secondary traumatic stress from empathizing with patient suffering</td><td>Acute</td></tr>
+        </tbody>
+      </table>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Individual Self-Care</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Adequate sleep, exercise, nutrition</li>
+            <li>Setting work-life boundaries</li>
+            <li>Mindfulness, journaling, peer support</li>
+            <li>Professional counseling when needed</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Organizational Interventions</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Safe staffing ratios</li>
+            <li>Regular check-ins, mental health resources</li>
+            <li>Flexible scheduling, wellness programs</li>
+            <li>Culture of psychological safety</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout callout-amber"><strong>Risk factors:</strong> Long shifts, high patient-nurse ratios, sleep deprivation, moral distress, lack of autonomy. Impact: turnover, medication errors, decreased patient satisfaction.</div>
+    </div>
+  </article>
+
+  <!-- L4 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-primary overflow-hidden" id="l4" data-title="bullying incivility harassment mobbing workplace nursing ANA">
+    <button onclick="toggle('l4')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Professional</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">4. Bullying in Nursing</h2>
+        <p class="text-on-surface-variant text-sm mt-1">17–85% of nurses report bullying · Incivility → Harassment → Bullying → Mobbing</p>
+      </div>
+      <span class="material-symbols-outlined text-primary text-2xl" id="l4-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l4-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">Zero Tolerance</span><span class="tag">ANA Code of Ethics</span><span class="tag">Bystander Training</span><span class="tag">Mobbing</span>
+      </div>
+      <table>
+        <thead><tr><th>Term</th><th>Definition</th><th>Intensity</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Incivility</strong></td><td>Rude, disrespectful behavior</td><td>Low</td></tr>
+          <tr><td><strong>Harassment</strong></td><td>Unwanted conduct related to protected characteristics</td><td>Moderate</td></tr>
+          <tr><td><strong>Bullying</strong></td><td>Repeated, targeted mistreatment with intent to harm</td><td>High</td></tr>
+          <tr><td><strong>Mobbing</strong></td><td>Group bullying by multiple individuals</td><td>Severe</td></tr>
+        </tbody>
+      </table>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Types of Bullying</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Verbal abuse (yelling, name-calling, belittling)</li>
+            <li>Controlling behavior (blocking assignments, sabotaging)</li>
+            <li>Exclusion (social isolation, withholding information)</li>
+            <li>Excessive/inappropriate workload</li>
+            <li>Physical intimidation</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Solutions</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Zero-tolerance policies</li>
+            <li>Clear reporting mechanisms</li>
+            <li>Bystander intervention training</li>
+            <li>Leadership accountability</li>
+            <li>ANA Code of Ethics enforcement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- L5 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-secondary overflow-hidden" id="l5" data-title="quality improvement PDSA lean six sigma TeamSTEPPS Kotter Lewin ADKAR IOM">
+    <button onclick="toggle('l5')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Systems</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">5. Quality Improvement</h2>
+        <p class="text-on-surface-variant text-sm mt-1">IOM 6 Domains · PDSA · Lean · Six Sigma · Change models</p>
+      </div>
+      <span class="material-symbols-outlined text-secondary text-2xl" id="l5-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l5-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">PDSA</span><span class="tag">Lean</span><span class="tag">Six Sigma DMAIC</span><span class="tag">TeamSTEPPS</span><span class="tag">Kotter 8-Step</span>
+      </div>
+      <div class="callout"><strong>IOM 6 Domains:</strong> Safe · Effective · Patient-Centered · Timely · Efficient · Equitable</div>
+      <table>
+        <thead><tr><th>QI Model</th><th>Steps / Focus</th></tr></thead>
+        <tbody>
+          <tr><td><strong>PDSA Cycle</strong></td><td>Plan → Do → Study → Act — rapid cycle improvement</td></tr>
+          <tr><td><strong>Lean</strong></td><td>Identify and eliminate waste — efficiency and flow</td></tr>
+          <tr><td><strong>Six Sigma (DMAIC)</strong></td><td>Define → Measure → Analyze → Improve → Control — reduce variation/defects</td></tr>
+          <tr><td><strong>TeamSTEPPS</strong></td><td>Communication, leadership, mutual support, situation monitoring — teamwork and safety</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <thead><tr><th>Change Model</th><th>Steps</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Kotter's 8-Step</strong></td><td>Urgency → Coalition → Vision → Communicate → Empower → Short wins → Consolidate → Anchor</td></tr>
+          <tr><td><strong>Lewin's 3-Step</strong></td><td>Unfreeze → Change → Refreeze</td></tr>
+          <tr><td><strong>ADKAR</strong></td><td>Awareness → Desire → Knowledge → Ability → Reinforcement</td></tr>
+        </tbody>
+      </table>
+      <p class="text-sm text-on-surface-variant"><strong>Nursing quality indicators:</strong> Falls, pressure injuries, HAIs, medication errors, patient satisfaction, nurse turnover.</p>
+    </div>
+  </article>
+
+  <!-- L6 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-tertiary-container overflow-hidden" id="l6" data-title="workplace violence OSHA de-escalation zero tolerance safety healthcare">
+    <button onclick="toggle('l6')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Safety</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">6. Workplace Violence</h2>
+        <p class="text-on-surface-variant text-sm mt-1">Healthcare workers 4× more likely to experience WPV · OSHA 4 types · Zero tolerance</p>
+      </div>
+      <span class="material-symbols-outlined text-tertiary text-2xl" id="l6-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l6-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">De-escalation</span><span class="tag">Zero Tolerance</span><span class="tag">Brøset Checklist</span><span class="tag">ANA Policy</span>
+      </div>
+      <table>
+        <thead><tr><th>OSHA Type</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Type 1: Criminal Intent</strong></td><td>Perpetrator has no relationship to workplace (e.g., robbery)</td></tr>
+          <tr><td><strong>Type 2: Customer/Client</strong></td><td>Patient, family member, or visitor commits act</td></tr>
+          <tr><td><strong>Type 3: Worker-on-Worker</strong></td><td>Employee to employee violence</td></tr>
+          <tr><td><strong>Type 4: Personal Relationship</strong></td><td>Domestic violence spills into workplace</td></tr>
+        </tbody>
+      </table>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Prevention Strategies</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Risk assessment (Brøset Violence Checklist)</li>
+            <li>De-escalation training</li>
+            <li>Environmental design (cameras, panic buttons)</li>
+            <li>Report all incidents including near-misses</li>
+            <li>Post-incident debriefing and support</li>
+          </ul>
+        </div>
+        <div class="callout callout-red">
+          <strong>ANA Zero Tolerance Policy:</strong> Violence is never acceptable. Every nurse deserves a safe workplace. Psychological safety to speak up must be enforced from leadership down.
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- L7 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-primary overflow-hidden" id="l7" data-title="telemetry EKG rhythm strip PQRST atrial fibrillation ventricular tachycardia heart block STEMI">
+    <button onclick="toggle('l7')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Cardiology</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">7. Telemetry &amp; EKG Interpretation</h2>
+        <p class="text-on-surface-variant text-sm mt-1">SA Node → Purkinje · PQRST waves · 20+ rhythms · STEMI localization</p>
+      </div>
+      <span class="material-symbols-outlined text-primary text-2xl" id="l7-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l7-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">SA Node</span><span class="tag">AV Block</span><span class="tag">A-Fib</span><span class="tag">V-Tach</span><span class="tag">V-Fib</span><span class="tag">STEMI</span><span class="tag">Torsades</span><span class="tag">Wellens</span>
+      </div>
+      <div class="callout"><strong>Conduction:</strong> SA Node → AV Node → Bundle of His → Bundle Branches → Purkinje Fibers</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">PQRST Waves</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>P wave</strong> — atrial depolarization</li>
+            <li><strong>PR interval</strong> — AV conduction (normal 0.12–0.20 sec)</li>
+            <li><strong>QRS complex</strong> — ventricular depolarization (normal &lt;0.12 sec)</li>
+            <li><strong>ST segment</strong> — ventricular repolarization begins (elevation = MI)</li>
+            <li><strong>T wave</strong> — ventricular repolarization</li>
+            <li><strong>QT interval</strong> — total ventricular activity (prolonged = Torsades risk)</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Lead Localization</h4>
+          <table>
+            <thead><tr><th>Leads</th><th>Wall / Territory</th></tr></thead>
+            <tbody>
+              <tr><td>II, III, aVF</td><td>Inferior (RCA)</td></tr>
+              <tr><td>I, aVL, V5, V6</td><td>Lateral (LCx)</td></tr>
+              <tr><td>V1–V4</td><td>Anterior (LAD)</td></tr>
+              <tr><td>V7–V9</td><td>Posterior</td></tr>
+              <tr><td>V3R–V4R</td><td>Right ventricle</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <h4 class="font-bold text-primary mb-2">Rhythm Summary</h4>
+      <div class="overflow-x-auto">
+      <table>
+        <thead><tr><th>Rhythm</th><th>Rate</th><th>Key Feature</th><th>Treatment</th></tr></thead>
+        <tbody>
+          <tr><td>Normal Sinus</td><td>60–100</td><td>Regular, P before every QRS</td><td>None</td></tr>
+          <tr><td>Sinus Brady</td><td>&lt;60</td><td>Slow, P before every QRS</td><td>Atropine 0.5mg if symptomatic</td></tr>
+          <tr><td>Sinus Tachy</td><td>&gt;100</td><td>Fast, P before every QRS</td><td>Treat underlying cause</td></tr>
+          <tr><td>1° AV Block</td><td>Normal</td><td>PR &gt;0.20 sec</td><td>Monitor only</td></tr>
+          <tr><td>2° Type I (Wenckebach)</td><td>Normal</td><td>PR gets longer, longer… then drop</td><td>Monitor, rarely treat</td></tr>
+          <tr><td>2° Type II (Mobitz II)</td><td>Normal</td><td>Constant PR, sudden dropped QRS</td><td>Pacemaker (risk of complete block)</td></tr>
+          <tr><td>3° AV Block (Complete)</td><td>20–40</td><td>P waves and QRS with NO relationship</td><td>Transcutaneous pacing → permanent pacemaker</td></tr>
+          <tr><td>PAC</td><td>Variable</td><td>Early, narrow QRS; P wave different</td><td>Usually benign</td></tr>
+          <tr><td>PVC</td><td>Variable</td><td>Wide (≥0.12s), bizarre QRS, compensatory pause</td><td>Treat if &gt;6/min, R-on-T, or runs</td></tr>
+          <tr><td>SVT</td><td>160–250</td><td>Narrow, fast, P waves hidden</td><td>Vagal maneuver → Adenosine 6mg IV</td></tr>
+          <tr><td>A-Flutter</td><td>~150 ventricular</td><td>Sawtooth P waves, typically 2:1 block</td><td>Rate control, cardioversion</td></tr>
+          <tr><td><strong>A-Fib</strong></td><td>400–600 atrial</td><td>Irregularly irregular, no P waves</td><td>Rate control, anticoagulation (stroke risk)</td></tr>
+          <tr><td><strong>V-Tach</strong></td><td>140–250</td><td>Wide complex, regular</td><td>Pulseless: CPR + defibrillate; Pulse: amiodarone</td></tr>
+          <tr><td><strong>Torsades de Pointes</strong></td><td>200–250</td><td>Twisting around baseline, prolonged QT</td><td>IV Magnesium; stop QT-prolonging drugs</td></tr>
+          <tr><td><strong>V-Fib</strong></td><td>Chaotic</td><td>No organized rhythm, wavy baseline</td><td>CPR + Immediate defibrillation</td></tr>
+          <tr><td>Asystole</td><td>0</td><td>Flat line</td><td>CPR only (no shock); treat 5 H's/5 T's</td></tr>
+          <tr><td>PEA</td><td>Any</td><td>Organized rhythm but NO pulse</td><td>CPR, treat underlying cause</td></tr>
+          <tr><td>RBBB</td><td>Normal</td><td>RSR' in V1 ("bunny ears"), wide QRS</td><td>Usually benign</td></tr>
+          <tr><td>LBBB</td><td>Normal</td><td>Broad notched R in V5-V6, wide QRS</td><td>May indicate cardiac disease</td></tr>
+          <tr><td>Junctional</td><td>40–60</td><td>Narrow QRS, inverted/absent P wave</td><td>Usually benign; treat if symptomatic</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout callout-red mt-2">
+        <strong>STEMI Localization:</strong> V1–V4 = Anterior (LAD) · II,III,aVF = Inferior (RCA) · I,aVL = Lateral (LCx) · ST depression V1–V3 + posterior leads = Posterior MI<br/>
+        <strong>Wellens Syndrome:</strong> Deep T inversions V2–V3 = LAD stenosis, high anterior MI risk.<br/>
+        <strong>Sgarbossa:</strong> For STEMI in LBBB — concordant ST elevation ≥1mm.
+      </div>
+    </div>
+  </article>
+
+  <!-- L8 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-secondary overflow-hidden" id="l8" data-title="heart failure NYHA ejection fraction HFrEF HFpEF furosemide entresto carvedilol SGLT2">
+    <button onclick="toggle('l8')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Cardiology</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">8. Heart Failure</h2>
+        <p class="text-on-surface-variant text-sm mt-1">6.2M Americans · NYHA I–IV · HFrEF vs HFpEF · Key medications</p>
+      </div>
+      <span class="material-symbols-outlined text-secondary text-2xl" id="l8-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l8-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">NYHA Class</span><span class="tag">EF &lt;40% = HFrEF</span><span class="tag">Furosemide</span><span class="tag">Entresto</span><span class="tag">SGLT2i</span><span class="tag">Daily Weights</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">NYHA Classifications</h4>
+          <table>
+            <thead><tr><th>Class</th><th>Symptoms</th></tr></thead>
+            <tbody>
+              <tr><td>I</td><td>No symptoms with ordinary activity</td></tr>
+              <tr><td>II</td><td>Slight limitation; symptoms with moderate exertion</td></tr>
+              <tr><td>III</td><td>Marked limitation; symptoms with minimal exertion</td></tr>
+              <tr><td>IV</td><td>Symptoms at rest</td></tr>
+            </tbody>
+          </table>
+          <h4 class="font-bold text-primary mt-3 mb-2">EF Categories</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>HFrEF</strong> — EF &lt;40%; systolic dysfunction</li>
+            <li><strong>HFmrEF</strong> — EF 41–49%</li>
+            <li><strong>HFpEF</strong> — EF ≥50%; diastolic dysfunction</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">LHF vs RHF</h4>
+          <table>
+            <thead><tr><th>LHF</th><th>RHF</th></tr></thead>
+            <tbody>
+              <tr><td>Pulmonary congestion</td><td>Systemic venous congestion</td></tr>
+              <tr><td>Dyspnea, orthopnea, PND</td><td>Peripheral edema, JVD, ascites</td></tr>
+              <tr><td>S3 gallop, crackles</td><td>Hepatomegaly</td></tr>
+              <tr><td>Caused by HTN, MI, valvular</td><td>Caused by LHF or COPD/pulmonary HTN</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <h4 class="font-bold text-primary mb-2">Key Medications</h4>
+      <table>
+        <thead><tr><th>Class</th><th>Examples</th><th>Benefit</th></tr></thead>
+        <tbody>
+          <tr><td>ACE Inhibitors</td><td>Lisinopril, enalapril</td><td>Reduce afterload, mortality</td></tr>
+          <tr><td>ARBs</td><td>Losartan, valsartan</td><td>Alternative to ACEi if cough</td></tr>
+          <tr><td>ARNI</td><td>Sacubitril/valsartan (Entresto)</td><td>Superior mortality vs. ACEi in HFrEF</td></tr>
+          <tr><td>Beta-Blockers</td><td>Carvedilol, metoprolol succinate</td><td>Reduce mortality in HFrEF</td></tr>
+          <tr><td>SGLT2 Inhibitors</td><td>Dapagliflozin, empagliflozin</td><td>Reduce HF hospitalization</td></tr>
+          <tr><td>Loop Diuretics</td><td>Furosemide (Lasix)</td><td>Symptom relief (fluid removal)</td></tr>
+          <tr><td>Aldosterone Antagonists</td><td>Spironolactone, eplerenone</td><td>Mortality benefit in HFrEF</td></tr>
+        </tbody>
+      </table>
+      <div class="callout"><strong>Patient education:</strong> Daily weights — report &gt;2 lbs in 1 day or &gt;5 lbs in 1 week. Low-sodium diet (&lt;2g/day). Fluid restriction. Medication adherence.</div>
+    </div>
+  </article>
+
+  <!-- L9 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-primary overflow-hidden" id="l9" data-title="hypertension blood pressure DASH diet ACE inhibitor ARB thiazide CCB RAAS">
+    <button onclick="toggle('l9')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Cardiology</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">9. Hypertension</h2>
+        <p class="text-on-surface-variant text-sm mt-1">108M Americans · ACC/AHA 2017 staging · RAAS · DASH diet · 5 drug classes</p>
+      </div>
+      <span class="material-symbols-outlined text-primary text-2xl" id="l9-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l9-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">DASH Diet</span><span class="tag">RAAS</span><span class="tag">ABPM</span><span class="tag">Stage 1 ≥130/80</span><span class="tag">Crisis &gt;180/120</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">ACC/AHA 2017 Classification</h4>
+          <table>
+            <thead><tr><th>Category</th><th>Systolic</th><th>Diastolic</th></tr></thead>
+            <tbody>
+              <tr><td>Normal</td><td>&lt;120</td><td>&lt;80</td></tr>
+              <tr><td>Elevated</td><td>120–129</td><td>&lt;80</td></tr>
+              <tr><td>Stage 1 HTN</td><td>130–139</td><td>80–89</td></tr>
+              <tr><td>Stage 2 HTN</td><td>≥140</td><td>≥90</td></tr>
+              <tr><td><strong>Crisis</strong></td><td>&gt;180</td><td>&gt;120</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Primary vs. Secondary HTN</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>Primary (essential):</strong> 90–95%; no identifiable cause; genetic + lifestyle</li>
+            <li><strong>Secondary:</strong> 5–10%; identifiable cause (renal artery stenosis, primary aldosteronism, sleep apnea, thyroid disease)</li>
+          </ul>
+          <div class="callout mt-3"><strong>RAAS:</strong> Renin → Angiotensin I → ACE → Angiotensin II → vasoconstriction + aldosterone → Na/water retention → ↑BP</div>
+        </div>
+      </div>
+      <h4 class="font-bold text-primary mb-2">Antihypertensive Medications</h4>
+      <table>
+        <thead><tr><th>Class</th><th>Examples</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Thiazide diuretics</td><td>HCTZ, chlorthalidone</td><td>First-line; may cause hypokalemia</td></tr>
+          <tr><td>ACE Inhibitors</td><td>Lisinopril</td><td>First-line with DM/CKD; can cause cough, hyperkalemia</td></tr>
+          <tr><td>ARBs</td><td>Losartan, valsartan</td><td>Use if ACEi cough intolerable</td></tr>
+          <tr><td>CCBs (DHP)</td><td>Amlodipine</td><td>Peripheral edema; good for isolated systolic HTN</td></tr>
+          <tr><td>CCBs (non-DHP)</td><td>Diltiazem</td><td>Bradycardia; avoid in HFrEF</td></tr>
+          <tr><td>Beta-Blockers</td><td>Metoprolol, atenolol</td><td>Good with CAD/HF; can cause fatigue</td></tr>
+        </tbody>
+      </table>
+      <p class="text-sm text-on-surface-variant"><strong>ABPM (Ambulatory BP Monitoring):</strong> Gold standard for diagnosing white coat and masked HTN. <strong>DASH diet:</strong> High fruits/vegetables/low-fat dairy; sodium &lt;2300 mg/day (ideally &lt;1500 mg).</p>
+    </div>
+  </article>
+
+  <!-- L10 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-tertiary-container overflow-hidden" id="l10" data-title="GI bleed hematemesis melena hematochezia PUD varices endoscopy colonoscopy octreotide">
+    <button onclick="toggle('l10')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">GI</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">10. GI Bleed</h2>
+        <p class="text-on-surface-variant text-sm mt-1">UGIB vs LGIB · Ligament of Treitz · Hematemesis · Melena · Hematochezia</p>
+      </div>
+      <span class="material-symbols-outlined text-tertiary text-2xl" id="l10-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l10-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">Ligament of Treitz</span><span class="tag">EGD</span><span class="tag">Octreotide</span><span class="tag">IV PPI</span><span class="tag">NPO for scope</span>
+      </div>
+      <table>
+        <thead><tr><th></th><th>Upper GI Bleed (UGIB)</th><th>Lower GI Bleed (LGIB)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Location</strong></td><td>Proximal to Ligament of Treitz</td><td>Distal to Ligament of Treitz</td></tr>
+          <tr><td><strong>Common causes</strong></td><td>PUD, esophageal varices, Mallory-Weiss tear</td><td>Diverticulosis, hemorrhoids, angiodysplasia, colorectal cancer</td></tr>
+          <tr><td><strong>Presentation</strong></td><td>Hematemesis, coffee-ground emesis, melena</td><td>Hematochezia (bright red/maroon blood per rectum)</td></tr>
+          <tr><td><strong>Stool</strong></td><td>Melena (black, tarry)</td><td>Bright red or maroon</td></tr>
+        </tbody>
+      </table>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Diagnostics</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>EGD</strong> — diagnoses/treats UGIB</li>
+            <li><strong>Colonoscopy</strong> — diagnoses/treats LGIB</li>
+            <li><strong>Tagged RBC scan</strong> — active slow/moderate bleeds</li>
+            <li><strong>Angiography</strong> — active rapid bleeds; can embolize</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Nursing Interventions</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Large-bore IV access ×2</li>
+            <li>Type and screen/crossmatch</li>
+            <li>NPO for endoscopy</li>
+            <li>Monitor vitals for hemodynamic instability</li>
+            <li>IV pantoprazole (PPI) for UGIB</li>
+            <li>Octreotide for variceal bleeds</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- L11 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-secondary overflow-hidden" id="l11" data-title="constipation bowel Rome IV MiraLAX senna docusate fiber opioids laxative">
+    <button onclick="toggle('l11')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">GI</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">11. Constipation Management</h2>
+        <p class="text-on-surface-variant text-sm mt-1">&lt;3 BMs/week · Rome IV criteria · Fiber 20–35g/day · Laxative classes</p>
+      </div>
+      <span class="material-symbols-outlined text-secondary text-2xl" id="l11-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l11-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">Rome IV</span><span class="tag">Bowel Training</span><span class="tag">Psyllium</span><span class="tag">Osmotic Laxatives</span><span class="tag">Stimulant Laxatives</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Rome IV Criteria (≥2 for 3+ months)</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Straining ≥25% of defecations</li>
+            <li>Lumpy/hard stools ≥25%</li>
+            <li>Sensation of incomplete evacuation ≥25%</li>
+            <li>Sensation of anorectal obstruction ≥25%</li>
+            <li>Manual maneuvers needed ≥25%</li>
+            <li>&lt;3 spontaneous BMs/week</li>
+          </ul>
+          <h4 class="font-bold text-primary mt-3 mb-2">Meds causing constipation</h4>
+          <p class="text-sm text-on-surface-variant">Opioids · anticholinergics · iron · calcium channel blockers · antidepressants · antihistamines · NSAIDs · antacids · diuretics</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Laxative Classes</h4>
+          <table>
+            <thead><tr><th>Type</th><th>Examples</th><th>Mechanism</th></tr></thead>
+            <tbody>
+              <tr><td>Bulk-forming</td><td>Metamucil, Citrucel</td><td>Absorb water, increase bulk</td></tr>
+              <tr><td>Emollient</td><td>Docusate</td><td>Lowers surface tension</td></tr>
+              <tr><td>Osmotic</td><td>MiraLAX, lactulose, MOM</td><td>Draw water into bowel</td></tr>
+              <tr><td>Stimulant</td><td>Senna, Dulcolax</td><td>Increase motility; CI in obstruction</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="callout"><strong>Nonpharmacologic:</strong> Bowel training after breakfast (gastrocolic reflex) · Fiber 20–35g/day · Adequate hydration · Exercise · Biofeedback for anorectal dysfunction</div>
+    </div>
+  </article>
+
+  <!-- L12 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-primary overflow-hidden" id="l12" data-title="spinal cord injury SCI bowel bladder autonomic dysreflexia neurogenic catheterization tetraplegia paraplegia">
+    <button onclick="toggle('l12')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Neuro</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">12. Spinal Cord Injury: Bowel &amp; Bladder</h2>
+        <p class="text-on-surface-variant text-sm mt-1">Tetraplegia vs paraplegia · Autonomic dysreflexia · Neurogenic bowel/bladder · IC q4–6h</p>
+      </div>
+      <span class="material-symbols-outlined text-primary text-2xl" id="l12-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l12-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag tag-red">Autonomic Dysreflexia = Emergency</span><span class="tag">Neurogenic Bowel</span><span class="tag">Intermittent Catheterization</span><span class="tag">WOCN</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">SCI Levels</h4>
+          <table>
+            <thead><tr><th>Level</th><th>Area Controlled</th></tr></thead>
+            <tbody>
+              <tr><td>Cervical (C1–C8)</td><td>Head, neck, arms, hands, diaphragm</td></tr>
+              <tr><td>Thoracic (T1–T12)</td><td>Chest, back, upper abdomen</td></tr>
+              <tr><td>Lumbar (L1–L5)</td><td>Lower abdomen, back, legs</td></tr>
+              <tr><td>Sacral (S1–S5)</td><td>Thighs to feet, anus, genitals</td></tr>
+            </tbody>
+          </table>
+          <h4 class="font-bold text-primary mt-3 mb-2">Bowel Dysfunction</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>Reflex hypertonic (neurogenic):</strong> cervical/thoracic injury; empties reflexively without brain → incontinence</li>
+            <li><strong>Flaccid hypotonic:</strong> lumbar injury; no reflex; sphincter relaxed → incontinence + constipation</li>
+          </ul>
+        </div>
+        <div>
+          <div class="callout callout-red">
+            <strong>Autonomic Dysreflexia:</strong> Emergency! Triggered by full bladder or bowel. Signs: sudden ↑BP, severe headache, bradycardia, profuse sweating above injury. Requires immediate intervention — find and remove the trigger.
+          </div>
+          <h4 class="font-bold text-primary mt-3 mb-2">Nursing Role</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Document bowel/bladder patterns</li>
+            <li>Intermittent catheterization (IC) every 4–6 hours</li>
+            <li>Scheduled digital stimulation, suppositories</li>
+            <li>High fiber diet, adequate hydration</li>
+            <li>Emotional support and privacy</li>
+            <li>Refer to WOCN, dietitian, counselor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- L13 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-secondary overflow-hidden" id="l13" data-title="pressure injury staging Braden scale prevention NPIAP DTI unstageable sacrum heel">
+    <button onclick="toggle('l13')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Skin Integrity</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">13. Pressure Injury Staging &amp; Prevention</h2>
+        <p class="text-on-surface-variant text-sm mt-1">2.5M cases/year · Stage 1–4 + Unstageable + DTI · Braden Scale · 3-bundle prevention</p>
+      </div>
+      <span class="material-symbols-outlined text-secondary text-2xl" id="l13-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l13-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">Braden Scale</span><span class="tag">Reposition q2h</span><span class="tag">NPIAP</span><span class="tag">Stage 1–4</span><span class="tag tag-red">DTI = dark red/maroon/purple</span>
+      </div>
+      <h4 class="font-bold text-primary mb-2">Staging</h4>
+      <table>
+        <thead><tr><th>Stage</th><th>Description</th><th>Quick Cue</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Stage 1</strong></td><td>Intact skin; non-blanchable erythema</td><td>Red but no break in skin</td></tr>
+          <tr><td><strong>Stage 2</strong></td><td>Partial-thickness loss; dermis exposed; pink/red moist wound, open blister</td><td>Open but no fat visible</td></tr>
+          <tr><td><strong>Stage 3</strong></td><td>Full-thickness; fat visible; slough/eschar may be present</td><td>Fat visible, no bone/tendon</td></tr>
+          <tr><td><strong>Stage 4</strong></td><td>Full-thickness; fascia/muscle/tendon/bone exposed or palpable</td><td>Bone/tendon visible</td></tr>
+          <tr><td><strong>Unstageable</strong></td><td>Full-thickness; covered by slough or eschar — must debride to stage</td><td>Can't see wound bed</td></tr>
+          <tr><td><strong>DTI</strong></td><td>Intact or non-intact skin with persistent non-blanchable deep red, maroon, or purple — or blood-filled blister</td><td>Dark discoloration</td></tr>
+        </tbody>
+      </table>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Causes</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>Pressure</strong> — intense/prolonged on bony prominences (heels, sacrum)</li>
+            <li><strong>Friction</strong> — skin dragged across surface → superficial injury</li>
+            <li><strong>Shear</strong> — internal structures move in opposite directions → deep tissue injury</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">NPIAP 3-Bundle Prevention</h4>
+          <ol class="text-sm space-y-1 text-on-surface-variant list-decimal pl-5">
+            <li>Standardized risk assessment (Braden or Norton) — admission, daily, with condition changes</li>
+            <li>Comprehensive skin assessment — inspect all pressure points, under devices</li>
+            <li>Care planning — reposition q2h, heel offloading, nutritional support, moisture management</li>
+          </ol>
+        </div>
+      </div>
+      <div class="callout callout-amber"><strong>Darker skin tones:</strong> Look for temperature differences (warm/cool), changes in skin tautness, shiny skin, compare to contralateral side — erythema may not be visible.</div>
+    </div>
+  </article>
+
+  <!-- L14 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-primary overflow-hidden" id="l14" data-title="wound VAC NPWT negative pressure wound therapy granulation angiogenesis foam dressing exudate healing phases">
+    <button onclick="toggle('l14')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Wound Care</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">14. Negative Pressure Wound Therapy (Wound VAC)</h2>
+        <p class="text-on-surface-variant text-sm mt-1">-125 mmHg typical · Granulation tissue · 4 healing phases · Troubleshooting</p>
+      </div>
+      <span class="material-symbols-outlined text-primary text-2xl" id="l14-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l14-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">-40 to -200 mmHg</span><span class="tag">Foam Sponge</span><span class="tag">Granulation Tissue</span><span class="tag">Angiogenesis</span><span class="tag tag-red">Off &gt;2hr → notify MD</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Indications</h4>
+          <p class="text-sm text-on-surface-variant">Diabetic foot ulcers · pressure injuries · skin graft fixation · burns · crush injuries · sternal/abdominal dehiscence · fasciotomy wounds · frostbite · animal bites · open fractures</p>
+          <h4 class="font-bold text-primary mt-3 mb-2">Contraindications</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Untreated osteomyelitis</li>
+            <li>Exposed blood vessels/nerves/organs/anastomotic sites</li>
+            <li>Open joint capsules</li>
+            <li>Malignant wounds</li>
+            <li>Necrotic tissue (debride first)</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Wound Healing Phases</h4>
+          <table>
+            <thead><tr><th>Phase</th><th>Timing</th><th>Key Events</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Hemostasis</strong></td><td>Immediate</td><td>Platelet aggregation, fibrin clot, vasoconstriction</td></tr>
+              <tr><td><strong>Inflammation</strong></td><td>Days 1–4</td><td>Vasodilation, WBCs, phagocytosis</td></tr>
+              <tr><td><strong>Proliferation</strong></td><td>Day 5–21</td><td>Fibroblasts, collagen, granulation, angiogenesis</td></tr>
+              <tr><td><strong>Remodeling</strong></td><td>Weeks–2 years</td><td>Scar forms, wound contracts and strengthens</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <h4 class="font-bold text-primary mb-2">Exudate Types</h4>
+      <div class="flex flex-wrap gap-2">
+        <span class="tag tag-blue">Sanguineous = fresh blood (bright red)</span>
+        <span class="tag">Serous = clear, thin</span>
+        <span class="tag">Serosanguinous = clear + small blood</span>
+        <span class="tag tag-red">Purulent = thick, opaque tan/yellow/green → REPORT</span>
+      </div>
+      <div class="callout"><strong>Troubleshooting:</strong> Seal leak → re-seal adhesive · Loss of suction → check tubing, clamps, canister · Device off &gt;2 hours without order → apply moist dressing, notify provider immediately</div>
+    </div>
+  </article>
+
+  <!-- L15 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-secondary overflow-hidden" id="l15" data-title="wound nutrition protein vitamin C zinc collagen healing diabetes obesity smoking malnutrition">
+    <button onclick="toggle('l15')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Wound Care</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">15. Nutritional Interventions for Wound Healing</h2>
+        <p class="text-on-surface-variant text-sm mt-1">Protein 1.2–1.5g/kg/day · Zinc · Vitamin C · Key nutrients · Impairing factors</p>
+      </div>
+      <span class="material-symbols-outlined text-secondary text-2xl" id="l15-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l15-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">Protein 1.2–1.5g/kg/day</span><span class="tag">Zinc — all phases</span><span class="tag">Vitamin C</span><span class="tag">Vitamin A</span><span class="tag">Arginine</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Factors Impairing Healing</h4>
+          <table>
+            <thead><tr><th>Factor</th><th>How It Impairs</th></tr></thead>
+            <tbody>
+              <tr><td>Diabetes</td><td>&gt;100 alterations; platelet dysfunction, poor granulation, vascular disease</td></tr>
+              <tr><td>Renal failure</td><td>Tissue edema, delayed granulation, protein/zinc/iron loss with HD</td></tr>
+              <tr><td>Smoking</td><td>Vasoconstriction → wound ischemia</td></tr>
+              <tr><td>Infection</td><td>Bacteria destroy collagen; delays all phases</td></tr>
+              <tr><td>Obesity</td><td>Infection risk, hematomas, local hypoxia, dehiscence</td></tr>
+              <tr><td>Aging</td><td>Slower healing — doubles by age 40 vs age 20</td></tr>
+              <tr><td>Malnutrition</td><td>Impaired immunity, fragile skin, reduced collagen synthesis</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Key Nutrients</h4>
+          <table>
+            <thead><tr><th>Nutrient</th><th>Role in Healing</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Protein</strong></td><td>Collagen synthesis; glutamine = preferred energy source; arginine promotes vessel formation</td></tr>
+              <tr><td><strong>Iron</strong></td><td>Hemoglobin → O2 delivery; deficiency = anemia, poor perfusion</td></tr>
+              <tr><td><strong>Vitamin A</strong></td><td>Accelerates collagen synthesis, inflammatory phase</td></tr>
+              <tr><td><strong>Vitamin B complex</strong></td><td>Cell proliferation, metabolism</td></tr>
+              <tr><td><strong>Vitamin C</strong></td><td>Iron absorption, collagen formation, immune response</td></tr>
+              <tr><td><strong>Zinc</strong></td><td>Used in ALL wound phases; fibroblast proliferation, collagen, granulation</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- L16 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-primary overflow-hidden" id="l16" data-title="ostomy ileostomy colostomy urostomy stoma WOCN bag flange peristomal output">
+    <button onclick="toggle('l16')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">GI / Urology</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">16. Ostomy Management</h2>
+        <p class="text-on-surface-variant text-sm mt-1">~1M Americans with ostomy · Ileostomy vs colostomy vs urostomy · Stoma assessment · Change procedure</p>
+      </div>
+      <span class="material-symbols-outlined text-primary text-2xl" id="l16-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l16-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">Pink/Red Stoma = Normal</span><span class="tag tag-red">Black Stoma = Necrosis → Emergency</span><span class="tag tag-red">Blue Stoma = Ischemia → Notify MD</span><span class="tag">WOCN</span>
+      </div>
+      <table>
+        <thead><tr><th>Type</th><th>Location</th><th>Indication</th><th>Output</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Ileostomy</strong></td><td>End of ileum (small intestine)</td><td>Colitis, Crohn's, colon cancer</td><td>Liquid/semi-liquid (enzymes present — skin risk)</td></tr>
+          <tr><td><strong>Colostomy</strong></td><td>Part of colon</td><td>Colorectal cancer, diverticulitis, trauma</td><td>More formed (further from small intestine)</td></tr>
+          <tr><td><strong>Urostomy</strong></td><td>Ureters → stoma</td><td>Bladder cancer, neurogenic bladder</td><td>Urine only</td></tr>
+        </tbody>
+      </table>
+      <h4 class="font-bold text-primary mb-2">Ostomy Change Procedure</h4>
+      <ol class="text-sm space-y-1 text-on-surface-variant list-decimal pl-5">
+        <li>Hand hygiene, gather supplies (gloves, bag, flange, scissors, measuring tool, skin prep, adhesive remover)</li>
+        <li>Provide privacy</li>
+        <li>Remove old system gently with adhesive remover; support surrounding skin</li>
+        <li>Measure stool/urine output</li>
+        <li>Clean stoma with <strong>warm water only</strong> (no soap — can irritate)</li>
+        <li>Assess stoma color and surrounding skin</li>
+        <li>Measure stoma diameter; cut flange opening to match (critical for ileostomy — enzymes destroy exposed skin)</li>
+        <li>Apply skin prep/paste</li>
+        <li>Press flange gently around stoma; attach bag</li>
+        <li>Document: stoma color, moisture, skin integrity, patient teaching</li>
+      </ol>
+      <div class="callout callout-amber"><strong>High ostomy output (HOO):</strong> Output &gt; intake within 3 weeks; more common with ileostomy; risk of dehydration/renal failure. Strict I&amp;O; IV hydration. Change every 4–7 days; empty when ⅓ to ½ full.</div>
+    </div>
+  </article>
+
+  <!-- L17 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-secondary overflow-hidden" id="l17" data-title="diabetes T1DM T2DM gestational insulin metformin GLP-1 SGLT2 HbA1c CGM pump hyperglycemia">
+    <button onclick="toggle('l17')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Endocrine</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">17. Diabetes Management</h2>
+        <p class="text-on-surface-variant text-sm mt-1">37.3M with DM · 96M prediabetes · Diagnosis criteria · 7 drug classes · CGM/CSII/AID devices</p>
+      </div>
+      <span class="material-symbols-outlined text-secondary text-2xl" id="l17-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l17-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">HbA1c ≥6.5% = DM</span><span class="tag">FPG ≥126 = DM</span><span class="tag">3 P's</span><span class="tag">Metformin 1st line T2</span><span class="tag">CGM</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Diagnosis Criteria (2 abnormal needed)</h4>
+          <table>
+            <thead><tr><th>Test</th><th>Diabetes</th><th>Prediabetes</th></tr></thead>
+            <tbody>
+              <tr><td>Fasting Plasma Glucose</td><td>≥126 mg/dL</td><td>100–125 mg/dL</td></tr>
+              <tr><td>HbA1c</td><td>≥6.5%</td><td>5.7–6.4%</td></tr>
+              <tr><td>2-hr OGTT (75g)</td><td>≥200 mg/dL</td><td>140–199 mg/dL</td></tr>
+              <tr><td>Random plasma glucose</td><td>≥200 + symptoms</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Types</h4>
+          <table>
+            <thead><tr><th>Type</th><th>Key Features</th></tr></thead>
+            <tbody>
+              <tr><td><strong>T1DM</strong></td><td>Autoimmune; insulin-dependent; ~5–10%; typically younger</td></tr>
+              <tr><td><strong>T2DM</strong></td><td>Insulin resistance + ↓ secretion; 90%; obesity, age</td></tr>
+              <tr><td><strong>GDM</strong></td><td>Pregnancy; screened at 24–28 weeks</td></tr>
+              <tr><td><strong>Prediabetes</strong></td><td>FPG 100–125 or A1C 5.7–6.4%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <h4 class="font-bold text-primary mb-2">Antidiabetic Medications</h4>
+      <div class="overflow-x-auto">
+      <table>
+        <thead><tr><th>Class</th><th>Example</th><th>Mechanism</th><th>Key Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Biguanides</td><td>Metformin</td><td>↓ hepatic glucose production</td><td>1st line T2DM; avoid in CKD; GI SEs; lactic acidosis risk</td></tr>
+          <tr><td>GLP-1 RAs</td><td>Semaglutide (Ozempic), liraglutide</td><td>Glucose-dependent insulin release</td><td>CV benefits; weight loss; GI SEs; pancreatitis risk</td></tr>
+          <tr><td>Sulfonylureas</td><td>Glipizide, glyburide</td><td>Stimulate beta-cell insulin release</td><td>Risk of prolonged hypoglycemia; weight gain; avoid with sulfa allergy or CKD</td></tr>
+          <tr><td>DPP-4 Inhibitors</td><td>Sitagliptin (Januvia)</td><td>Block DPP-4 → preserve GLP-1</td><td>Weight neutral; pancreatitis risk</td></tr>
+          <tr><td>SGLT2 Inhibitors</td><td>Empagliflozin, dapagliflozin</td><td>Block glucose reabsorption in kidney</td><td>CV/renal benefits; UTI/genital infection risk; Fournier's gangrene; avoid with DKA</td></tr>
+          <tr><td>Thiazolidinediones</td><td>Pioglitazone</td><td>Reduce insulin resistance</td><td>Weight gain; HF risk; bone fractures; don't cause hypoglycemia</td></tr>
+          <tr><td>Insulin</td><td>Rapid, short, intermediate, long-acting</td><td>Replace endogenous insulin</td><td>Required for T1DM; may need in T2DM with A1C &gt;9–10%</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout"><strong>Symptoms of hyperglycemia:</strong> Polydipsia · Polyuria · Polyphagia (the 3 P's). <strong>Devices:</strong> CGM (real-time subcutaneous glucose) · CSII pump · AID = "closed loop" system (pump + CGM + algorithm).</div>
+    </div>
+  </article>
+
+  <!-- L18 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-tertiary-container overflow-hidden" id="l18" data-title="hospice palliative care Medicare hospice benefit CHPN terminal 6 months comfort quality of life">
+    <button onclick="toggle('l18')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Palliative</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">18. Hospice &amp; Palliative Care</h2>
+        <p class="text-on-surface-variant text-sm mt-1">"All hospice is palliative care, but not all palliative care is hospice" · MHB 100% Medicare · CHPN</p>
+      </div>
+      <span class="material-symbols-outlined text-tertiary text-2xl" id="l18-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l18-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">Medicare Hospice Benefit</span><span class="tag">≤6 months prognosis</span><span class="tag">CHPN Certification</span><span class="tag">Comfort Care</span>
+      </div>
+      <table>
+        <thead><tr><th></th><th>Hospice</th><th>Palliative Care</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Who</strong></td><td>Terminally ill; prognosis ≤6 months</td><td>Any serious illness; any stage; any age</td></tr>
+          <tr><td><strong>Goal</strong></td><td>Comfort; quality of life; no curative treatment</td><td>Comfort + quality of life; concurrent with curative treatment OK</td></tr>
+          <tr><td><strong>Duration</strong></td><td>As long as terminally ill</td><td>Indefinite; based on patient needs</td></tr>
+          <tr><td><strong>Payment</strong></td><td>100% covered by Medicare (MHB)</td><td>Per-visit reimbursement; varies</td></tr>
+          <tr><td><strong>Team</strong></td><td>MD, RN, SW, chaplain, CNA, dietitian, PT/OT/ST</td><td>MD/NP; nurses less consistently included</td></tr>
+        </tbody>
+      </table>
+      <h4 class="font-bold text-primary mb-2">Common Myths vs. Facts</h4>
+      <table>
+        <thead><tr><th>Myth</th><th>Fact</th></tr></thead>
+        <tbody>
+          <tr><td>Hospice hastens death</td><td>Patients often live longer with hospice than without</td></tr>
+          <tr><td>Palliative care = giving up</td><td>Palliative care aims to improve quality of life — can run alongside curative treatment</td></tr>
+          <tr><td>Hospice is a place</td><td>Hospice is a form of care provided wherever patient lives</td></tr>
+          <tr><td>It's only for last days</td><td>Eligible with ≤6 month prognosis; continues as long as terminally ill</td></tr>
+        </tbody>
+      </table>
+      <div class="callout"><strong>Nurse's role:</strong> Patient-centered care · Shared decision-making · Pain/symptom management · Psychosocial/spiritual support · Address healthcare disparities. <strong>CHPN:</strong> Requires 2 years hospice experience; offered by HPNA.</div>
+    </div>
+  </article>
+
+  <!-- L19 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-primary overflow-hidden" id="l19" data-title="end of life conversations death grief Kubler-Ross 5 stages dying Cheyne-Stokes death rattle mottling VALUE framework">
+    <button onclick="toggle('l19')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Palliative</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">19. Navigating Difficult End-of-Life Conversations</h2>
+        <p class="text-on-surface-variant text-sm mt-1">Kübler-Ross 5 stages · VALUE framework · Phases of dying · Cheyne-Stokes · Mottling</p>
+      </div>
+      <span class="material-symbols-outlined text-primary text-2xl" id="l19-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l19-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">VALUE Framework</span><span class="tag">Kübler-Ross</span><span class="tag">Cheyne-Stokes</span><span class="tag">Death Rattle</span><span class="tag">Mottling</span><span class="tag">POLST</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">5 Stages of Grief (Kübler-Ross)</h4>
+          <ol class="text-sm space-y-1 text-on-surface-variant list-decimal pl-5">
+            <li><strong>Denial</strong> — denying the feelings, not necessarily the facts</li>
+            <li><strong>Anger</strong> — normal, necessary; anger masks underlying pain</li>
+            <li><strong>Bargaining</strong> — "if this, then that"; can occur at any stage</li>
+            <li><strong>Depression</strong> — reality sets in; appropriate response, not mental illness</li>
+            <li><strong>Acceptance</strong> — not "okay" with loss, but adjusting to new reality</li>
+          </ol>
+          <h4 class="font-bold text-primary mt-3 mb-2">VALUE Framework</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>V</strong>alue statements from family</li>
+            <li><strong>A</strong>cknowledge emotions</li>
+            <li><strong>L</strong>isten actively</li>
+            <li><strong>U</strong>nderstand who patient is as a person</li>
+            <li><strong>E</strong>licit questions</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Phases of Dying</h4>
+          <div class="callout callout-amber mb-3">
+            <strong>Transition Phase (~2–3 weeks):</strong> Increased sleep · decreased appetite · difficulty swallowing (do NOT force feed) · withdrawal · may see deceased loved ones (normal) · incontinence begins
+          </div>
+          <div class="callout callout-red">
+            <strong>Actively Dying (~last 48 hours):</strong> Obtunded/comatose · BP drops · HR speeds up then slows · Cheyne-Stokes breathing · "Death rattle" (80% die within 48h of onset) · Mottling (starts lower extremities) · Minimal urine output
+          </div>
+        </div>
+      </div>
+      <div class="callout"><strong>Nursing care:</strong> Hearing is LAST sense to go — keep talking positively. Mouth swabs for hydration near end. Schedule comfort meds proactively. Do NOT try to wake or force feed. <strong>Key documents:</strong> Advance directives · POLST · Durable Medical POA</div>
+    </div>
+  </article>
+
+  <!-- L20 -->
+  <article class="lesson-card bg-white rounded-2xl shadow-sm border-l-[5px] border-secondary overflow-hidden" id="l20" data-title="pneumonia CAP HAP VAP aspiration dysphagia streptococcus antibiotics chin tuck elderly older adults">
+    <button onclick="toggle('l20')" class="w-full flex justify-between items-center p-6 text-left hover:bg-surface-container-low transition-colors">
+      <div>
+        <span class="text-[10px] font-black text-outline uppercase tracking-widest block mb-1">Pulmonary</span>
+        <h2 class="text-xl font-extrabold font-headline text-primary">20. Pneumonia in Older Adults</h2>
+        <p class="text-on-surface-variant text-sm mt-1">~41,000 deaths/year · CAP/HAP/VAP/Aspiration · S. pneumoniae #1 · Aspiration prevention · Chin-tuck</p>
+      </div>
+      <span class="material-symbols-outlined text-secondary text-2xl" id="l20-chevron">expand_more</span>
+    </button>
+    <div class="lesson-body px-6 pb-6 space-y-4" id="l20-body">
+      <div class="flex flex-wrap gap-2">
+        <span class="tag">S. pneumoniae #1</span><span class="tag">CAP · HAP · VAP</span><span class="tag">Aspiration prevention</span><span class="tag">Chin-Tuck</span><span class="tag">Oral Care</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-primary mb-2">Types of Pneumonia</h4>
+          <table>
+            <thead><tr><th>Type</th><th>Definition</th></tr></thead>
+            <tbody>
+              <tr><td><strong>CAP</strong></td><td>Community-acquired; outside hospital (includes assisted living)</td></tr>
+              <tr><td><strong>HAP</strong></td><td>Develops ≥48 hours after admission; not present on admission</td></tr>
+              <tr><td><strong>VAP</strong></td><td>Develops ≥48 hours after intubation</td></tr>
+              <tr><td><strong>Aspiration</strong></td><td>Oropharyngeal or GI secretions enter lower respiratory tract</td></tr>
+            </tbody>
+          </table>
+          <h4 class="font-bold text-primary mt-3 mb-2">Common Organisms</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li><strong>Bacterial:</strong> S. pneumoniae (#1), H. influenzae, S. aureus, Mycoplasma ("walking pneumonia")</li>
+            <li><strong>Viral:</strong> Influenza, SARS-CoV-2, RSV, rhinovirus</li>
+            <li><strong>Fungal:</strong> P. jirovecii (HIV/immunocompromised), Aspergillus (VAP)</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-primary mb-2">Signs &amp; Symptoms</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Fever/chills, body aches, fatigue, lack of appetite</li>
+            <li>Cough with or without sputum, shortness of breath</li>
+            <li>↑HR, ↑RR, ↓O2 saturation, elevated WBC</li>
+            <li>Diminished/abnormal breath sounds</li>
+            <li>CXR: infiltrates/consolidation pattern</li>
+            <li><strong>Older adults:</strong> Altered mental status may be the ONLY sign</li>
+          </ul>
+          <h4 class="font-bold text-primary mt-3 mb-2">Complications</h4>
+          <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+            <li>Respiratory failure, lung abscess, empyema (pus in pleural space)</li>
+            <li>Atelectasis, bacteremia/sepsis → multi-organ failure</li>
+            <li><strong>ARDS</strong> — life-threatening</li>
+          </ul>
+        </div>
+      </div>
+      <h4 class="font-bold text-primary mb-2">Aspiration Prevention</h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <ul class="text-sm space-y-1 text-on-surface-variant list-disc pl-5">
+          <li>Position upright (90°) during all meals</li>
+          <li><strong>Chin-tuck maneuver</strong> — tuck chin to chest when swallowing to protect airway</li>
+          <li>Quiet environment with adequate lighting during meals</li>
+          <li>Thicken liquids per speech therapy recommendation</li>
+          <li>Serve food hot OR cold (stimulates swallow reflex better than room temp)</li>
+          <li>Regular oral care — reduces bacterial load (critical for ventilated patients)</li>
+          <li>Always elevate HOB for tube feedings; pause during repositioning</li>
+        </ul>
+        <div>
+          <div class="callout"><strong>Dysphagia protocol:</strong> Nurse → bedside swallowing screen first → if suspected, NPO + notify provider + speech therapy referral. Speech therapy uses GUSS-ICU, barium swallow, FEES. May need to crush oral medications.</div>
+          <div class="callout mt-2"><strong>Empiric antibiotics:</strong> Piperacillin/tazobactam · cefepime · levofloxacin · or aminoglycoside + imipenem. Adjust based on cultures. Implement isolation per organism.</div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</main>
+</div>
+
+<!-- Footer -->
+<footer class="w-full py-10 border-t border-slate-200 bg-slate-50 flex flex-col items-center justify-center space-y-4">
+  <div class="text-center">
+    <h4 class="text-xl font-bold font-headline text-teal-900 mb-1">You've got this! 💪</h4>
+    <p class="text-slate-500 text-sm">SC Renewal Bundle · 20 Lessons · Study guide compiled from Nursing CE Central.</p>
+  </div>
+</footer>
+
+<script>
+function toggle(id) {
+  const body = document.getElementById(id + '-body');
+  const chevron = document.getElementById(id + '-chevron');
+  if (body.classList.contains('open')) {
+    body.classList.remove('open');
+    chevron.style.transform = '';
+  } else {
+    body.classList.add('open');
+    chevron.style.transform = 'rotate(180deg)';
+  }
+}
+
+function expandAll() {
+  document.querySelectorAll('.lesson-body').forEach(b => b.classList.add('open'));
+  document.querySelectorAll('[id$="-chevron"]').forEach(c => c.style.transform = 'rotate(180deg)');
+}
+
+function filterLessons() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  document.querySelectorAll('.lesson-card').forEach(card => {
+    const title = (card.getAttribute('data-title') || '') + card.innerText;
+    const match = !q || title.toLowerCase().includes(q);
+    card.style.display = match ? '' : 'none';
+    if (match && q) {
+      const body = card.querySelector('.lesson-body');
+      if (body) body.classList.add('open');
+    }
+  });
+}
+</script>
+</body>
+</html>
